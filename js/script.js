@@ -142,7 +142,7 @@ const certificates = [
 const loader = document.getElementById("preloader");
 setTimeout(() => {
     loader.style.display = "none";
-}, 5000);
+}, 3000);
 
 // Dark Mode
 const html = document.querySelector('html');
