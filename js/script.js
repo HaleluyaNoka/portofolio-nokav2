@@ -139,10 +139,10 @@ const certificates = [
 });
 
 // Preloader
-const loader = document.getElementById("preloader")
-window.addEventListener("load", function(){
-    loader .style .display ="none"
-});
+const loader = document.getElementById("preloader");
+setTimeout(() => {
+    loader.style.display = "none";
+}, 10000);
 
 // Dark Mode
 const html = document.querySelector('html');
