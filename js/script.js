@@ -156,7 +156,7 @@ swicth.addEventListener('click', function() {
 function toggleFavicon() {
     const favicon = document.getElementById("favicon-icon");
     const isDarkMode = document.documentElement.classList.contains("dark");
-    favicon.href = isDarkMode ? "../img/Icon2.png" : "../img/Icon.png";
+    favicon.href = isDarkMode ? "./img/Icon2.png" : "./img/Icon.png";
 }
 
 new MutationObserver(toggleFavicon).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
