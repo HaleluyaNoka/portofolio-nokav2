@@ -160,3 +160,16 @@ function toggleFavicon() {
 }
 
 new MutationObserver(toggleFavicon).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+
+// Device mode theme
+function updateTheme() {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+}
+
+updateTheme();
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateTheme);
